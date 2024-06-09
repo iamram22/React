@@ -1,5 +1,6 @@
 import "./App.css"
 //component names should always start with a capital letter (JSX)
+
 function FirstButton(){
   return(
     <button>Creating my first button in react</button>
