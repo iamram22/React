@@ -33,6 +33,7 @@ function App() {
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select()
     document.getElementById("copy").innerHTML = "Copied"
+    document.getElementById("copy").style.backgroundColor = "green"
    
     window.navigator.clipboard.writeText(password)
   }, [password])
