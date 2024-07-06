@@ -1,9 +1,9 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
-return (
-  <>
-    <h1 className="text-3xl bg-orange-600 text-right">
-      Currency Converter App
-    </h1>
-  </>
-);
+function useCurrencyInfo(currency) {
+  useEffect(() => {
+    fetch(
+      `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
+    );
+  }, []);
+}
