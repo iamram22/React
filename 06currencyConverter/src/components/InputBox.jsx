@@ -48,5 +48,5 @@ function InputBox({
     </div>
   );
 }
-
+//come back later and verify the details added
 export default InputBox;
