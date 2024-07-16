@@ -53,4 +53,5 @@ function InputBox({
   );
 }
 //come back later and verify the details added
+//check twice
 export default InputBox;
